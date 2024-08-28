@@ -1,0 +1,26 @@
+﻿services:
+  OtelTesting:
+    build:
+      context: .
+      dockerfile: OtelTesting/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://172.17.0.1:4317
+      - OTEL_SERVICE_NAME=otel_testing
+      - ASPNETCORE_URLS=https://+:443;http://+:80
+    depends_on:
+      - "aspire-dashboard"
+    ports:
+      - 5000:80
+      - 5001:443
+    networks:
+      - dotnetcoreapplication
+  aspire-dashboard:
+    image: mcr.microsoft.com/dotnet/nightly/aspire-dashboard:8.0-preview
+    ports:
+      - 18888:18888
+      - 4317:18889
+    networks:
+      - dotnetcoreapplication # put all the networks here
+networks:
+  dotnetcoreapplication:

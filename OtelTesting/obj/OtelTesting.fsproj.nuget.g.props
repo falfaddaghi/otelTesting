@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/falfaddaghi/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/falfaddaghi/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/home/falfaddaghi/.nuget/packages/" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgOpenTelemetry_Instrumentation_Runtime Condition=" '$(PkgOpenTelemetry_Instrumentation_Runtime)' == '' ">/home/falfaddaghi/.nuget/packages/opentelemetry.instrumentation.runtime/1.9.0</PkgOpenTelemetry_Instrumentation_Runtime>
+    <PkgOpenTelemetry_Extensions_Hosting Condition=" '$(PkgOpenTelemetry_Extensions_Hosting)' == '' ">/home/falfaddaghi/.nuget/packages/opentelemetry.extensions.hosting/1.9.0</PkgOpenTelemetry_Extensions_Hosting>
+    <PkgOpenTelemetry_Exporter_OpenTelemetryProtocol Condition=" '$(PkgOpenTelemetry_Exporter_OpenTelemetryProtocol)' == '' ">/home/falfaddaghi/.nuget/packages/opentelemetry.exporter.opentelemetryprotocol/1.9.0</PkgOpenTelemetry_Exporter_OpenTelemetryProtocol>
+    <PkgOpenTelemetry_Exporter_Console Condition=" '$(PkgOpenTelemetry_Exporter_Console)' == '' ">/home/falfaddaghi/.nuget/packages/opentelemetry.exporter.console/1.9.0</PkgOpenTelemetry_Exporter_Console>
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/falfaddaghi/.nuget/packages/fsharp.core/8.0.400</PkgFSharp_Core>
+  </PropertyGroup>
+</Project>
